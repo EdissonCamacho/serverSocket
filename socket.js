@@ -15,6 +15,9 @@ io.on('connection', (socket) => {
         io.emit('variable', msg);
     });
 
+    socket.on('recargarUsuario', (msg) => {
+        io.emit('recargarUsuario', msg);
+    });
 
 });
 
