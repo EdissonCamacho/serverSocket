@@ -19,6 +19,15 @@ io.on('connection', (socket) => {
         io.emit('recargarUsuario', msg);
     });
 
+    socket.on('turno', (msg) => {
+        io.emit('turno', msg);
+    });
+
+    socket.on('gano', (msg) => {
+        io.emit('gano', msg);
+    });
+
+
 });
 
 
